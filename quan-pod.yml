@@ -1,0 +1,11 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: quan-node
+  labels:
+    name: quan-node
+spec:
+  containers:
+    - name: quan-node
+      image: sounerd/quan-daemon:1.0
+      imagePullPolicy: IfNotPresent
